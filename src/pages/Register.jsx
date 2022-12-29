@@ -1,4 +1,5 @@
 import React from 'react'
+import addAvatar from '../img/addAvatar.png'
 
 export default function Register() {
     return (
@@ -10,9 +11,13 @@ export default function Register() {
                     <input type="text" placeholder='display name' />
                     <input type="email" placeholder='email' />
                     <input type="password" placeholder='password' />
-                    <input type="file" multiple placeholder='add an avatar' />
+                    <label for="files">
+                        <img src={addAvatar}/>
+                        <span>Add an avatar</span>
+                    </label>
+                    <input id="files" style={{display: "none"}} type="file" multiple placeholder='add an avatar' />
                     <button>Sign up</button>
-                    <p>You do have an account? Register</p>
+                    <p>You do have an account? Login</p>
 
                 </form>
             </div>

@@ -1,6 +1,7 @@
 // *color pallete:
 $bg-color: #a7bcff;
-$light-color: white;
+$light-color: #8da4f1;
+$neutral-white: white;
 $text-color: #5d5b8d;
 
 // * --- *
@@ -60,7 +61,7 @@ img {
     align-items: center;
 
     .formWrapper {
-        background-color: $light-color;
+        background-color: $neutral-white;
         padding: 20px 60px;
         border-radius: 10px;
         display: flex;
@@ -98,20 +99,39 @@ img {
                 }
             }
 
-            button{
+            label {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: $light-color;
+                cursor: pointer;
+
+                img {
+                    height: 32px;
+                }
+
+                span {
+                    font-size: 0.8rem;
+                }
+            }
+
+
+
+            button {
                 background-color: $bg-color;
                 padding: 10px;
-                color: $light-color;
+                color: $neutral-white;
                 font-weight: 600;
                 border: none;
                 outline: none;
                 cursor: pointer;
             }
 
-            p{
+            p {
                 color: $text-color;
                 font-size: 0.8rem;
                 text-align: center;
+                margin-top: 10px;
             }
         }
     }
