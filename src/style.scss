@@ -1,11 +1,20 @@
-// *color pallete
+// *color pallete:
 $bg-color: #a7bcff;
+$light-color: white;
+$text-color: #5d5b8d;
+
+// * --- *
+
+// *font:
+$ff-primary: 'Inter', sans-serif;
+// * --- *
 
 
 // *default styling
 html {
     box-sizing: border-box;
     font-size: 16px;
+    font-family: $ff-primary;
 }
 
 *,
@@ -39,6 +48,8 @@ img {
     height: auto;
 }
 
+// * --- *
+
 
 // *REGISTER PAGE:
 .formContainer {
@@ -49,11 +60,59 @@ img {
     align-items: center;
 
     .formWrapper {
+        background-color: $light-color;
+        padding: 20px 60px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .logo {
+            color: $text-color;
+            font-weight: 700;
+            font-size: 1.7rem;
+        }
+
+        .title {
+            color: $text-color;
+            font-size: 0.9em;
+        }
+
         form {
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 10px;
+
+            input {
+                padding: 15px;
+                border: none;
+                width: 250px;
+                outline: none;
+                border-bottom: 1px solid $bg-color;
+
+                &::placeholder {
+                    color: rgb(175, 175, 175);
+                }
+            }
+
+            button{
+                background-color: $bg-color;
+                padding: 10px;
+                color: $light-color;
+                font-weight: 600;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+
+            p{
+                color: $text-color;
+                font-size: 0.8rem;
+                text-align: center;
+            }
         }
     }
 }

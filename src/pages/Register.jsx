@@ -10,7 +10,7 @@ export default function Register() {
                     <input type="text" placeholder='display name' />
                     <input type="email" placeholder='email' />
                     <input type="password" placeholder='password' />
-                    <input type="file" placeholder='add an avatar' />
+                    <input type="file" multiple placeholder='add an avatar' />
                     <button>Sign up</button>
                     <p>You do have an account? Register</p>
 
