@@ -1,5 +1,6 @@
 // *color pallete:
-$bg-color: #a7bcff;
+$bg-color-light: #a7bcff;
+$bg-color-dark: #3e3c61;
 $light-color: #8da4f1;
 $neutral-white: white;
 $text-color: #5d5b8d;
@@ -54,7 +55,7 @@ img {
 
 // *REGISTER PAGE:
 .formContainer {
-    background-color: $bg-color;
+    background-color: $bg-color-light;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -92,7 +93,7 @@ img {
                 border: none;
                 width: 250px;
                 outline: none;
-                border-bottom: 1px solid $bg-color;
+                border-bottom: 1px solid $bg-color-light;
 
                 &::placeholder {
                     color: rgb(175, 175, 175);
@@ -118,7 +119,7 @@ img {
 
 
             button {
-                background-color: $bg-color;
+                background-color: $bg-color-light;
                 padding: 10px;
                 color: $neutral-white;
                 font-weight: 600;
@@ -137,5 +138,34 @@ img {
     }
 }
 
+
+// * --- *
+
+// * Home page:
+.home {
+    background-color: $bg-color-light;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        display: flex;
+        border: 1px solid white ;
+        width: 65%;
+        height: 80%;
+        border-radius: 10px;
+        overflow: hidden;
+        .sidebar{
+            flex: 1;
+            background-color: $bg-color-dark;
+        }
+
+        .chat{
+            flex: 2;
+        }
+    }
+
+}
 
 // * --- *
