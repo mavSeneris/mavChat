@@ -1,9 +1,11 @@
 // *color pallete:
 $bg-color-light: #a7bcff;
-$bg-color-dark: #3e3c61;
+$bg-color-sidebar: #3e3c61;
+$bg-color-navbar: #2f2d52;
 $light-color: #8da4f1;
 $neutral-white: white;
 $text-color: #5d5b8d;
+$text-color-light: #ddddf7;
 
 // * --- *
 
@@ -151,17 +153,90 @@ img {
 
     .container {
         display: flex;
-        border: 1px solid white ;
+        border: 1px solid white;
         width: 65%;
         height: 80%;
         border-radius: 10px;
         overflow: hidden;
-        .sidebar{
+
+        .sidebar {
             flex: 1;
-            background-color: $bg-color-dark;
+            background-color: $bg-color-sidebar;
+
+            .navbar {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 50px;
+                background-color: $bg-color-navbar;
+                padding: 20px;
+                color: $bg-color-light;
+
+                .logo {
+                    font-weight: 700;
+                }
+
+                .user {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        background-color: $text-color-light;
+                        height: 25px;
+                        width: 24px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    button {
+                        background-color: $text-color;
+                        color: $text-color-light;
+                        border: none;
+                        outline: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .search {
+                border-bottom: 1px solid gray;
+
+                .searchForm {
+                    input {
+                        background-color: transparent;
+                        color: white;
+                        border: none;
+                        outline: none;
+                        padding: 10px;
+                        &::placeholder{
+                            color: lightgray;
+                        }
+                    }
+                }
+            }
+
+            .userChat {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    background-color: $bg-color-navbar;
+                }
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+            }
         }
 
-        .chat{
+        .chat {
             flex: 2;
         }
     }
