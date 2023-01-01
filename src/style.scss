@@ -209,7 +209,7 @@ img {
                         border: none;
                         outline: none;
                         padding: 10px;
-                        
+
                         &::placeholder{
                             color: lightgray;
                         }
@@ -234,11 +234,44 @@ img {
                     border-radius: 50%;
                     object-fit: cover;
                 }
+
+                .userChatInfo{
+                    span{
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                    }
+                    p{
+                        font-size: 0.9rem;
+                        color: lightgray;
+                    }
+                }
+                
+
             }
         }
 
         .chat {
             flex: 2;
+
+            .chatInfo{
+                height: 50px;
+                background-color: $text-color;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                color: lightgray;
+            }
+
+            .chatIcons{
+                display: flex;
+                gap: 10px;
+                img{
+                    width: 24px;
+                    height: 24px;
+                    cursor: pointer;
+                }
+            }
         }
     }
 
