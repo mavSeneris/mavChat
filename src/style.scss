@@ -210,7 +210,7 @@ img {
                         outline: none;
                         padding: 10px;
 
-                        &::placeholder{
+                        &::placeholder {
                             color: lightgray;
                         }
                     }
@@ -225,9 +225,10 @@ img {
                 color: white;
                 cursor: pointer;
 
-                &:hover{
+                &:hover {
                     background-color: $bg-color-navbar;
                 }
+
                 img {
                     width: 50px;
                     height: 50px;
@@ -235,17 +236,18 @@ img {
                     object-fit: cover;
                 }
 
-                .userChatInfo{
-                    span{
+                .userChatInfo {
+                    span {
                         font-size: 1.1rem;
                         font-weight: 500;
                     }
-                    p{
+
+                    p {
                         font-size: 0.9rem;
                         color: lightgray;
                     }
                 }
-                
+
 
             }
         }
@@ -253,7 +255,7 @@ img {
         .chat {
             flex: 2;
 
-            .chatInfo{
+            .chatInfo {
                 height: 50px;
                 background-color: $text-color;
                 display: flex;
@@ -263,14 +265,64 @@ img {
                 color: lightgray;
             }
 
-            .chatIcons{
+            .chatIcons {
                 display: flex;
                 gap: 10px;
-                img{
+
+                img {
                     width: 24px;
                     height: 24px;
                     cursor: pointer;
                 }
+            }
+
+            .messages {
+                background-color: $text-color-light;
+                padding: 10px;
+                height: calc(84.5vh - 160px);
+            }
+
+            .input {
+                height: 50px;
+                background-color: white;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                input{
+                    width: 80%;
+                    border: none;
+                    outline: none;
+                    color: $bg-color-navbar;
+                    font-size: 1.1rem;
+
+                    &::placeholder{
+                        color: lightgray;
+                    }
+                };
+                .send{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img{
+                        height: 24px;
+                        cursor: pointer;
+                    }
+                }
+
+                button{
+                    color: white;
+                    background-color: $light-color;
+                    border: none;
+                    padding: 10px 15px;
+
+                    &:hover{
+                        background-color: #a7bcff;
+                    }
+                }
+                
             }
         }
     }

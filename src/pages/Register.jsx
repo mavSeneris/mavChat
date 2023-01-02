@@ -11,7 +11,7 @@ export default function Register() {
                     <input type="text" placeholder='display name' />
                     <input type="email" placeholder='email' />
                     <input type="password" placeholder='password' />
-                    <label for="files">
+                    <label htmlFor="files">
                         <img src={addAvatar}/>
                         <span>Add an avatar</span>
                     </label>
