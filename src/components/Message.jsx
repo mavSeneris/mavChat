@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Message() {
   return (
-    <div className='message'>
+    <div className='message owner'>
       <div className='messageInfo'>
         <img src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG9ydHJhaXR8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60' alt='' />
         <span>Just now</span>
