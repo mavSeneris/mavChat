@@ -13,6 +13,9 @@ $text-color-light: #ddddf7;
 $ff-primary: 'Inter', sans-serif;
 // * --- *
 
+$a: 100%;
+$b: 160px;
+
 
 // *default styling
 html {
@@ -169,7 +172,7 @@ img {
                 justify-content: space-between;
                 height: 50px;
                 background-color: $bg-color-navbar;
-                padding: 20px;
+                padding: 10px;
                 color: $bg-color-light;
 
                 .logo {
@@ -263,6 +266,7 @@ img {
                 justify-content: space-between;
                 padding: 10px;
                 color: lightgray;
+
             }
 
             .chatIcons {
@@ -270,7 +274,6 @@ img {
                 gap: 10px;
 
                 img {
-                    width: 24px;
                     height: 24px;
                     cursor: pointer;
                 }
@@ -279,8 +282,9 @@ img {
             .messages {
                 background-color: $text-color-light;
                 padding: 10px;
-                height: calc(84.5vh - 160px);
+                height: calc(90vh - 160px);
                 overflow: scroll;
+
 
                 .message {
                     display: flex;
